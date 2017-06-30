@@ -2,9 +2,14 @@
 <ion-view>
 	<ion-nav-title class="title">Guia de fontes</ion-nav-title>
 	<ion-content>	
-
+		<div class="list list-inset">
+  			<label class="item item-input">
+    			<i class="icon ion-search placeholder-icon"></i>
+    			<input type="text" placeholder="Pesquise...">
+  			</label>
+		</div> 
 		<ion-list>
-	    	<ion-item ng-repeat="artigo in listaGuia" href="#/artigoEscolhido/{{artigo}}">
+	    	<ion-item ng-repeat="artigo in listaGuia | orderBy:'titulo'" href="#/artigoEscolhido/{{artigo}}">
 	      		{{artigo.titulo}}
 	    	</ion-item>
 		</ion-list>
