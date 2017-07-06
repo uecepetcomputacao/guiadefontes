@@ -1,16 +1,20 @@
 
 <ion-view>
-	<ion-nav-title>{{artigoEscolhido}}</ion-nav-title>
+	<ion-nav-title>{{artigoEscolhido.titulo}}</ion-nav-title>
 	<ion-content>
 		<div class="card">
 		  <div class="item item-divider">
-		    {{artigoEscolhido}}
+		   {{artigoEscolhido.titulo}}
 		  </div>
 		  <div class="item item-text-wrap">
-		  	texto do artigo
+		  	<p>{{artigoEscolhido.pat}}</p>
+		  	<p>{{artigoEscolhido.info}}</p>
+		  	<p>{{artigoEscolhido.pat2}}</p>
+		  	<p>{{artigoEscolhido.info2}}</p>
+
 		  </div>
 		  <div class="item item-divider">
-		    contato
+		    <a href="mailto:{{artigoEscolhido.mail}},{{artigoEscolhido.mail2}}">Mande um e-mail!</a> <i class="icon ion-android-mail"></i>
 		  </div>
 		</div>
 	</ion-content>
