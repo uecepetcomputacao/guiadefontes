@@ -8,10 +8,26 @@
 		  </div>
 		  <div class="item item-text-wrap">
 		  	<p>{{artigoEscolhido.pat}}</p>
-		  	<p>{{artigoEscolhido.info}}</p>
-		  	<p>{{artigoEscolhido.pat2}}</p>
-		  	<p>{{artigoEscolhido.info2}}</p>
-
+			  	<p>{{artigoEscolhido.info}}</p>
+			  	<a href="mailto:{{artigoEscolhido.mail}}">{{artigoEscolhido.mail}}</a>
+			  	<div ng-show="{{artigoEscolhido.pat2}}">
+			  		<hr>
+			  		<p>{{artigoEscolhido.pat2}}</p>
+			  		<p>{{artigoEscolhido.info2}}</p>
+			  		<a href="mailto:{{artigoEscolhido.mail2}}">{{artigoEscolhido.mail2}}</a>			
+			  	</div>
+			  	<div ng-show="{{artigoEscolhido.pat3}}">
+			  		<hr>
+			  		<p>{{artigoEscolhido.pat3}}</p>
+			  		<p>{{artigoEscolhido.info3}}</p>
+			  		<a href="mailto:{{artigoEscolhido.mail3}}">{{artigoEscolhido.mail3}}</a>
+			  		<hr>
+			  	</div>
+			  	<div ng-show="{{artigoEscolhido.pat4}}">
+			  		<p>{{artigoEscolhido.pat4}}</p>
+			  		<p>{{artigoEscolhido.info4}}</p>
+			  		<a href="mailto:{{artigoEscolhido.mail4}}">{{artigoEscolhido.mail4}}</a>
+			  	</div>
 		  </div>
 		  <div class="item item-divider">
 		    <a href="mailto:{{artigoEscolhido.mail}},{{artigoEscolhido.mail2}}">Mande um e-mail!</a> <i class="icon ion-android-mail"></i>
